@@ -17,7 +17,7 @@ class ToDoTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 25, right: 25, top: 25),
+      padding: EdgeInsets.only(left: 25, right: 25, top: 25),
       child: Slidable(
         endActionPane: ActionPane(motion: StretchMotion(), children: [
           SlidableAction(
@@ -27,7 +27,7 @@ class ToDoTile extends StatelessWidget {
           ),
         ]),
         child: Container(
-          padding: const EdgeInsets.all(5),
+          padding: EdgeInsets.all(5),
           decoration: BoxDecoration(
               color: Colors.blue[300],
               borderRadius: BorderRadius.only(

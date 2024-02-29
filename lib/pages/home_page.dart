@@ -32,7 +32,9 @@ class _HomePageState extends State<HomePage> {
 
   // Checkbox functionality
   void checkBoxChanged(bool? value, int index) {
-    db.toDoList[index][1] = !db.toDoList[index][1];
+    setState(() {
+      db.toDoList[index][1] = !db.toDoList[index][1];
+    });
     db.updateDataBase();
   }
 

@@ -24,8 +24,8 @@ class DialogBox extends StatelessWidget {
             // Getting the users input
             TextField(
               controller: controller,
-              style: const TextStyle(color: Colors.white),
-              decoration: const InputDecoration(
+              style: TextStyle(color: Colors.white),
+              decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: "Create a new task",
                 isDense: true,
